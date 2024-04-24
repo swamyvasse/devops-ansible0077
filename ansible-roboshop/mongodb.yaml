@@ -17,10 +17,10 @@
      enabled: yes
   - name: enable remote connections to mongodb
     ansible.builtin.lineinfile:
-     path: /etc/mongod.conf
-     regexp: '127.0.0.1'
-     line: '0.0.0.0'
+      path: /etc/mongod.conf
+      regexp: '127.0.0.1'
+      replace: '0.0.0.0'
   - name: restart mongodb
     ansible.builtin.servie:
-     name: mongod
-     state: restarted
+      name: mongod
+      state: restarted
