@@ -14,6 +14,7 @@
     ansible.builtin.debug:
      msg: "{{output.rc}}"
   - name: craete user swamy
+    become: yes
     ansible.builtin.user:
      name: swamy
     when: output.rc != 0
