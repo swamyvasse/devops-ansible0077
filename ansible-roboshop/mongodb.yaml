@@ -10,8 +10,8 @@
     ansible.builtin.yum:
      name: mongodb-org
      state: installed
-  - name: start mongodb
+  - name: start and enable mongodb
     ansible.builtin.service:
-     name: mongodb
+     name: mongod
      state: started
      enabled: yes
