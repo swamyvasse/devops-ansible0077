@@ -13,7 +13,7 @@
   - name: printed exit status
     ansible.builtin.debug:
      msg: "{{output.rc}}"
-  - name: create user
+  - name: create user ramki
     ansible.builtin.user: 
     name: ramki
   when: output.rc != 0
