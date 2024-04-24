@@ -1,0 +1,7 @@
+- name: craete user ramki
+  hosts: localhost
+  tasks:
+  - name: checking user exists or not
+    ansible.builtin.command: id ramki
+    register: output
+    
