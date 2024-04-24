@@ -12,6 +12,7 @@
     vars:
      COURSE: aws
      HOUSES: own
+  tasks:
   - name: printed varibles from task level
     ansible.builtin.debug:
       msg: "i am leraning course is {{COURSE}} and tariner is {{TARINER}} and duration is {{DURATION}} and he have a {{HOUSES}} house"
