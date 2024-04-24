@@ -4,4 +4,8 @@
   - name: checking user exists or not
     ansible.builtin.command: id ramki
     register: output
-    
+    ignore_errors: true
+  
+  - name: printed command line status
+    ansible.builtin.debug:
+     msg: "output is {{output}}"
