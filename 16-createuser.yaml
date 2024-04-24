@@ -15,5 +15,5 @@
      msg: "{{output.rc}}"
   - name: create user ramki
     ansible.builtin.user: 
-    name: ramki
-  when: output.rc != 0
+     name: ramki
+    when: output.rc != 0
