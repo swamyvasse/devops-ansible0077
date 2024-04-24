@@ -8,5 +8,5 @@
       dest: /etc/yum.repos.d/mongo.repo
   - name: install MongoDB Package
     ansible.builtin.yum:
-     name: install mongodb-org
+     name: install mongodb-org, mongodb-org-server
      state: installed
