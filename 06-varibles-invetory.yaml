@@ -1,0 +1,6 @@
+- name: printed varibles from inventory level
+  hosts: mongodb
+  tasks:
+  - name: printed varibles from inventory level
+    ansible.builtin.debug:
+     msg: "USERANME {{useranme}}"

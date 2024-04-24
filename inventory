@@ -1,2 +1,5 @@
 [mongodb]
 roboshop-us-dev-db-mongodb-01.swamy.cloud
+
+[mongodb:vars]
+MONGODB_USER=username
