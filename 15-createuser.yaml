@@ -5,3 +5,7 @@
     ansible.builtin.command: id swamy
     register: output
     ignore_errors: True
+  
+  - name: print the command output
+    ansible.builtin.debug:
+     msg: "output is {{output}}"
