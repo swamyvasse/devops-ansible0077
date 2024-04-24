@@ -4,3 +4,4 @@
   - name: checking user exists or not
     ansible.builtin.command: id swamy
     register: output
+    ignore_errors: True
