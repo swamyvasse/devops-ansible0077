@@ -9,3 +9,11 @@
   - name: printed command line status
     ansible.builtin.debug:
      msg: "output is {{output}}"
+
+  - name: printed exit status
+    ansible.builtin.debug:
+     msg: "{{output.rc}}"
+  - name: create user
+    ansible.builtin.user: 
+    name: ramki
+  when: output.rc != 0
