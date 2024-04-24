@@ -22,5 +22,5 @@
       line: '0.0.0.0'
   - name: restart mongodb
     ansible.builtin.service:
-      name: mongod
+      name: mongodb
       state: restarted
